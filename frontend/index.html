@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Premium Potato Disease Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating Animation Background -->
+<div class="circle c1"></div>
+<div class="circle c2"></div>
+<div class="circle c3"></div>
+
+<!-- Dark Mode Switch -->
+<div class="dark-toggle">
+    <input type="checkbox" id="darkSwitch">
+    <label for="darkSwitch" class="toggle-btn">🌙</label>
+</div>
+
+<div class="container">
+
+    <h1 class="title">🥔Potato Disease Detector</h1>
+
+    <div class="card glass">
+
+        <div class="upload-section">
+            <label class="upload-label">Upload a Leaf Image</label>
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+
+        <button class="btn-3d" onclick="predict()">🔍 Analyze Image</button>
+
+        <div class="loader" id="loader"></div>
+
+        <img id="preview">
+
+        <div id="result"></div>
+        <div id="treatment"></div>
+
+        <div class="divider"></div>
+
+        
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
